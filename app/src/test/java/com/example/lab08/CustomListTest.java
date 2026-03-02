@@ -33,7 +33,6 @@ public class CustomListTest {
         list.addCity(city1);
         list.addCity(city2);
         
-        // This should fail initially (RED Phase)
         assertEquals(2, list.countCities());
     }
 }

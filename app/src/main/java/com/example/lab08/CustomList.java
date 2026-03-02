@@ -23,7 +23,7 @@ public class CustomList {
             cities.remove(city);
         }
 
-    else {
+        else {
         throw new IllegalArgumentException("City not found in the list.");
         }
     }
@@ -35,6 +35,5 @@ public class CustomList {
 
 
 
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
+
 }
