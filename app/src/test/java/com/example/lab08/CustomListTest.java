@@ -1,7 +1,17 @@
 package com.example.lab08;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
 public class CustomListTest {
 
+    @Test
+    public void testHasCity() {
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        list.addCity(calgary);
+        
+        // This will fail initially because hasCity() doesn't exist yet
+        assertTrue(list.hasCity(calgary));
+    }
 }
