@@ -23,7 +23,17 @@ public class CustomListTest {
 
         list.deleteCity(city);
         assertFalse(list.hasCity(city));
+    }
 
-
+    @Test
+    public void testCountCities() {
+        CustomList list = new CustomList();
+        City city1 = new City("Edmonton", "AB");
+        City city2 = new City("Vancouver", "BC");
+        list.addCity(city1);
+        list.addCity(city2);
+        
+        // This should fail initially (RED Phase)
+        assertEquals(2, list.countCities());
     }
 }

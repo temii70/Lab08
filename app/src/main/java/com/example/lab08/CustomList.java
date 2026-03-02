@@ -28,6 +28,11 @@ public class CustomList {
         }
     }
 
+    public int countCities(){
+
+        return 0;
+    }
+
 
 
     // Will be implemented later using TDD (leave blank for now)
