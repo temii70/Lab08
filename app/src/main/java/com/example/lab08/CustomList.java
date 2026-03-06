@@ -14,9 +14,13 @@ public class CustomList {
         cities.add(city);
     }
 
+    /**
+     * This checks if the city is in the list
+     * @param city The city to check
+     * @return Boolean result
+     */
     public boolean hasCity(City city) {
-        // Red Phase: returning false so the test fails
-        return false;
+        return cities.contains(city);
     }
 
     public void deleteCity(City city) {
