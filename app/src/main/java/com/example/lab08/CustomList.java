@@ -18,10 +18,7 @@ public class CustomList {
         return cities.contains(city);
     }
 
-    /**
-     * This deletes a city from the list if it exists
-     * @param city The city to delete
-     */
+
     public void deleteCity(City city) {
         if (cities.contains(city)) {
             cities.remove(city);
@@ -30,10 +27,7 @@ public class CustomList {
         }
     }
 
-    /**
-     * This returns the number of cities in the list
-     * @return
-     */
+
     public int countCities() {
         return cities.size();
     }
