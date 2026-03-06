@@ -31,6 +31,7 @@ public class CustomList {
     }
 
     public int countCities() {
-        return cities.size();
+        // Red Phase: returning 0 so the test fails
+        return 0;
     }
 }
