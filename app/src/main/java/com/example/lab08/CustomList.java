@@ -30,8 +30,11 @@ public class CustomList {
         }
     }
 
+    /**
+     * This returns the number of cities in the list
+     * @return
+     */
     public int countCities() {
-        // Red Phase: returning 0 so the test fails
-        return 0;
+        return cities.size();
     }
 }
