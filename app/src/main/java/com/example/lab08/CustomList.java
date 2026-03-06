@@ -15,26 +15,19 @@ public class CustomList {
     }
 
     public boolean hasCity(City city) {
-//        return cities.contains(city);
-        //
+        // Red Phase: returning false so the test fails
+        return false;
     }
 
     public void deleteCity(City city) {
         if (cities.contains(city)) {
             cities.remove(city);
-        }
-
-        else {
-        throw new IllegalArgumentException("City not found in the list.");
+        } else {
+            throw new IllegalArgumentException("City not found in the list.");
         }
     }
 
-    public int countCities(){
-
-       return cities.size();
+    public int countCities() {
+        return cities.size();
     }
-
-
-
-
 }
