@@ -14,21 +14,12 @@ public class CustomList {
         cities.add(city);
     }
 
-    /**
-     * This checks if the city is in the list
-     * @param city The city to check
-     * @return Boolean result
-     */
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
 
     public void deleteCity(City city) {
-        if (cities.contains(city)) {
-            cities.remove(city);
-        } else {
-            throw new IllegalArgumentException("City not found in the list.");
-        }
+        // Red Phase: doing nothing so the test fails
     }
 
     public int countCities() {
